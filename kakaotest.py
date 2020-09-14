@@ -1,4 +1,4 @@
-#%%
+# %% 2020 하반기 카카오 코딩 테스트 1번 문제
 import re
 
 #%%
@@ -38,6 +38,8 @@ def solution(new_id):
 
 
 #%%
-test_id = "..asd."
+test_id = "..asd!#~TEDas...sdd."
 
 solution(test_id)
+
+# %%

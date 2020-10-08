@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사</title>
+</head>
+
+<body>
+    <h1>결과</h1>
+    <table border="1">
+        {% for key, value in result.items() %}
+        <tr>
+            <th>{{key}}</th>
+            <td>{{value}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <hr>
+    <input type="button" value="결과보기" onclick="location.href='/list'">
+</body>
+
+</html>

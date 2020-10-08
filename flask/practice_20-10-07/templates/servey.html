@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사</title>
+</head>
+
+<body>
+    <h1>설문조사</h1>
+    <form action="/result" method="post">
+        <label>이름</label>
+        <input type="text" name="name" placeholder="홍길동" required> <br>
+        <label>이메일</label>
+        <input type="email" name="email" placeholder="example@domain.com"><br>
+        <label>성별</label>
+        <input type="radio" name="sex" value="male"> 남성
+        <input type="radio" name="sex" value="female"> 여성<br>
+        <label>생년월일(YYYY/MM/DD)</label>
+        <input type="date" name="date of birth"><br>
+
+        <hr>
+
+        <input type="submit" value="제출">
+        <input type="reset" value="삭제">
+        <input type="button" value="결과보기" onclick="location.href='/list'">
+    </form>
+</body>
+
+</html>

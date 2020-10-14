@@ -1,7 +1,8 @@
 const title = document.querySelector('#title');
 
-function handleClick() {
-    title.style.color = 'blue'
+
+function init() {
+    title.addEventListener("click", handleClick);
 }
 
-window.addEventListener("click", handleClick);
+init();

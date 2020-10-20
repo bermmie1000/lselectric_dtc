@@ -15,3 +15,5 @@ function init() {
 }
 
 init();
+
+/* 변경된 부분 표시 */
